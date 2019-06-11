@@ -25,8 +25,9 @@ public abstract class Card
      * Students should implement this method for their specific children classes 
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
-    public enum Suit {HEARTS,CLUBS,SPADES,DIAMONDS};
+        public enum Suit {HEARTS,CLUBS,SPADES,DIAMONDS};
         public enum Value{ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING};
+        private boolean isHigher = true;
         private final Suit suit;
         private final Value value;
         
